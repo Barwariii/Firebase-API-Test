@@ -8,7 +8,8 @@ const BASE_URL = "https://remotestorage-300dd-default-rtdb.europe-west1.firebase
 
 async function loadData(path="") {
    let response = await fetch(BASE_URL+ path + ".json");
-   let responseToJson = await response.json();
-   console.log(responseToJson);
+   return responseToJson = await response.json(); // um damit weiter arbeiten
+//    let responseToJson = await response.json();
+//    console.log(responseToJson);
    
 }
